@@ -1,0 +1,17 @@
+﻿@{
+
+    @model IEnumerable<Blog.Models.Article>
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+@foreach (var article in Model)
+{
+    <div class="panel panel-primary">
+        <div class="panel-heading text-uppercase">@article.Name</div>
+        <div class="panel-body">@article.Text</div>
+        <div class="panel-footer">@article.Date.ToString("yyyy/MM/dd")</div>
+    </div>
+}
+</div>
