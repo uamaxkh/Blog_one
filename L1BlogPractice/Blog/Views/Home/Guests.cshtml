@@ -1,0 +1,47 @@
+﻿@*Передавання списку відгуків*@
+@{
+    @model IEnumerable<DBLib.Models.Review>
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+
+    @*Виведення всіх коментарів*@
+    @{
+        if (Model.Any())
+        {
+            foreach (var review in Model)
+            {
+                <div class="panel panel-default">
+                    <div class="panel-heading text-uppercase">@review.AuthorName</div>
+                    <div class="panel-body">@review.Text</div>
+                    <div class="panel-footer">@review.Date.ToString("yyyy/MM/dd")</div>
+                </div>
+            }
+        }
+        else
+        {
+                <div class="bg-warning text-info alertMessage">Наразі коментарі відсутні.<br>Додайте свій коментар нижче.</div>
+            
+        }
+    }
+
+    @*Блок форми додавання нового коментаря*@
+    <div class="panel panel-info">
+        <div class="panel-heading text-uppercase">Додати коментар</div>
+        <div class="panel-body">
+            <form method="post" action="/Home/Guests" role="form">
+                <div class="form-group ">
+                    <label class="control-label" for="Name">Ім'я</label>
+                    <input required class="form-control" name="Name" id="Name" type="text" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Comment">Коментар</label>
+                    <input required class="form-control" name="Comment" id="Comment" type="text" />
+                </div>
+                <button type="submit" class="btn btn-sm btn-primary">Додати комент</button>
+            </form>
+        </div>
+    </div>
+</div>

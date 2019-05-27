@@ -1,0 +1,39 @@
+F:\BLOG DB\V1\Blog\DBLib\bin\Debug\DBLib.dll.config
+F:\BLOG DB\V1\Blog\DBLib\bin\Debug\DBLib.dll
+F:\BLOG DB\V1\Blog\DBLib\bin\Debug\DBLib.pdb
+F:\BLOG DB\V1\Blog\DBLib\bin\Debug\EntityFramework.dll
+F:\BLOG DB\V1\Blog\DBLib\bin\Debug\EntityFramework.SqlServer.dll
+F:\BLOG DB\V1\Blog\DBLib\bin\Debug\EntityFramework.xml
+F:\BLOG DB\V1\Blog\DBLib\bin\Debug\EntityFramework.SqlServer.xml
+F:\BLOG DB\V1\Blog\DBLib\bin\Debug\ru\EntityFramework.resources.dll
+F:\BLOG DB\V1\Blog\DBLib\obj\Debug\DBLib.csprojAssemblyReference.cache
+F:\BLOG DB\V1\Blog\DBLib\obj\Debug\DBLib.csproj.CoreCompileInputs.cache
+F:\BLOG DB\V1\Blog\DBLib\obj\Debug\DBLib.csproj.CopyComplete
+F:\BLOG DB\V1\Blog\DBLib\obj\Debug\DBLib.dll
+F:\BLOG DB\V1\Blog\DBLib\obj\Debug\DBLib.pdb
+D:\RealDesktop\V1\Blog\DBLib\bin\Debug\DBLib.dll.config
+D:\RealDesktop\V1\Blog\DBLib\bin\Debug\DBLib.dll
+D:\RealDesktop\V1\Blog\DBLib\bin\Debug\DBLib.pdb
+D:\RealDesktop\V1\Blog\DBLib\bin\Debug\EntityFramework.dll
+D:\RealDesktop\V1\Blog\DBLib\bin\Debug\EntityFramework.SqlServer.dll
+D:\RealDesktop\V1\Blog\DBLib\bin\Debug\EntityFramework.xml
+D:\RealDesktop\V1\Blog\DBLib\bin\Debug\EntityFramework.SqlServer.xml
+D:\RealDesktop\V1\Blog\DBLib\bin\Debug\ru\EntityFramework.resources.dll
+D:\RealDesktop\V1\Blog\DBLib\obj\Debug\DBLib.csprojAssemblyReference.cache
+D:\RealDesktop\V1\Blog\DBLib\obj\Debug\DBLib.csproj.CoreCompileInputs.cache
+D:\RealDesktop\V1\Blog\DBLib\obj\Debug\DBLib.csproj.CopyComplete
+D:\RealDesktop\V1\Blog\DBLib\obj\Debug\DBLib.dll
+D:\RealDesktop\V1\Blog\DBLib\obj\Debug\DBLib.pdb
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\bin\Debug\DBLib.dll.config
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\bin\Debug\DBLib.dll
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\bin\Debug\DBLib.pdb
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\bin\Debug\EntityFramework.dll
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\bin\Debug\EntityFramework.SqlServer.dll
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\bin\Debug\EntityFramework.xml
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\bin\Debug\EntityFramework.SqlServer.xml
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\bin\Debug\ru\EntityFramework.resources.dll
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\obj\Debug\DBLib.csprojAssemblyReference.cache
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\obj\Debug\DBLib.csproj.CoreCompileInputs.cache
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\obj\Debug\DBLib.csproj.CopyComplete
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\obj\Debug\DBLib.dll
+D:\UAMAXKH_HAB\!Desktop\Programming\MVC\L2BlogPractice\Blog\DBLib\obj\Debug\DBLib.pdb
