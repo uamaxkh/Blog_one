@@ -1,0 +1,14 @@
+﻿@model List<DBLib.Models.Voting>
+
+<div class="panel panel-info">
+    <div class="panel-heading text-uppercase">Звідки ти</div>
+    <div class="panel-body">
+        <form class="btn-group btn-group-vertical btn-block" method="post" action="/Home/VoteResults" role="form">
+            @foreach (var voteItem in Model)
+            {
+                <button id="@voteItem.Id" class="btn btn-warning" type="submit" name="voteSelected" value="@voteItem.Id">@voteItem.Name</button>
+            }
+            @Html.ActionLink("Подивитися результати", "VoteResults", "Home", null, new { @class="btn btn-default"})
+        </form>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿---Для валідації---
+--Web.config--
+<appSettings>
+    <add key="ClientValidationEnabled" value="true" />
+    <add key="UnobtrusiveJavaScriptEnabled" value="true" />
+</appSettings>
+--Файл класу--
+using System.ComponentModel.DataAnnotations;
+
+--Global.asax-- ЗАМІСТЬ Web.config
+protectedvoidApplication_Start()
+{
+	HtmlHelper.ClientValidationEnabled= true;
+	HtmlHelper.UnobtrusiveJavaScriptEnabled= true;
+	...
+}
+--~/App_Start/BundleConfig.cs--
+public static voidRegisterBundles(BundleCollectionbundles)
+{
+	bundles.Add(new ScriptBundle("~/bundles/jquery").Include("~/Scripts/jquery-{version}.js"));
+	bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include("~/Scripts/jquery.validate*"));
+}
+--~/Views/Shared/Layout.cshtml**
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jqueryval")

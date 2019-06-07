@@ -1,0 +1,101 @@
+﻿body {
+    padding-top: 50px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.myBody {
+    width: 80%;
+}
+
+.myMenu {
+    padding: 10px;
+}
+
+.titleLogo {
+    margin: 0px 10px 0px 0px;
+    height: 20px;
+}
+
+.alertMessage {
+    padding: 14px;
+    border-radius: 6px;
+    margin: 5px 0px;
+}
+
+.marginTop{
+    margin-top: 10px;
+}
+
+.dispInBl {
+    display: inline-block;
+}
+
+.divideTwoChildEl > * {
+    width: 49.5%;
+    display: inline-block;
+}
+
+.rightTextAlign {
+    text-align: right;
+}
+
+.tagSection {
+    margin: 20px 0px;
+}
+.tagSection > * {
+    background-color: #03a2ff;
+    color: #ffffff;
+    padding: 3px 6px;
+    border-radius: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.tagSection > *:before {
+    content: '#';
+}
+
+.border {
+    margin: 6px;
+}
+
+.dateSection {
+    margin-top: 4px;
+    background-color: #686868;
+    font-size: 80%;
+    color: white;
+    border-radius: 5px;
+    padding: 1px 6px;
+    display: inline-block;
+}
+
+.noMarginBottom{
+    margin-bottom: 0px;
+}
+
+.input-validation-error{
+    color: red;
+    border-color: red;
+}
+
+.field-validation-error {
+    color: red;
+}

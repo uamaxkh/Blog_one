@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Результати голосування";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    @model List<DBLib.Models.Voting>
+}
+
+<h2>Результати голосування</h2>
+
+<ul>
+    @{
+        foreach (var voteItem in Model)
+        {
+            <li class="border">@voteItem.Name <span class="badge">@voteItem.Voted</span></li>
+        }
+    }
+</ul>
+<div><a href="/Home/Index">Повернутися на голову</a></div>

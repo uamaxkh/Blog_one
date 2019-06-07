@@ -1,0 +1,37 @@
+﻿@*Передавання списку статей*@
+@{
+    @model IEnumerable<DBLib.Models.Article>
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+
+    @*Виведення всіх статей*@
+    @{
+        if (Model.Any())
+        {
+            foreach (var article in Model)
+            {
+                <div class="panel panel-primary">
+                        <div class="panel-heading text-uppercase divideTwoChildEl">
+                            <div>@article.Name</div>
+                            <div class="rightTextAlign"><span>@article.Date.ToString("yyyy/MM/dd")</span></div>
+                        </div>
+                    <div class="panel-body">
+                        <div>@article.Text.Substring(0, 200)<text>...</text></div>
+                        @Html.ActionLink("Читати далі", "ViewMore", new { id = article.Id }, new { @class="btn btn-xs btn-primary marginTop dispInBl"})
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="bg-warning text-info alertMessage">Наразі контент відсутній</div>
+        }
+    }
+</div>
+
+@section Voting {
+    @Html.Partial("_VotingSection", (IEnumerable<DBLib.Models.Voting>)ViewData["VotingList"])
+}

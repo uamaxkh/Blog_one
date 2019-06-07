@@ -1,0 +1,52 @@
+﻿@*Передавання профілю користувача*@
+@{
+    @model DBLib.Models.Profile
+}
+
+<h2>Дякуємо. Вашу відповідь збережено</h2>
+
+@if (Model != null)
+{
+    @CreateListFromProfile(Model)
+}
+
+@*Helper для виведення інформації з профілю*@ 
+@helper CreateListFromProfile(DBLib.Models.Profile prof)
+{
+    <ul class="list-group">
+        @{
+            //Отримання списку назв-властивостей для відображення
+            List<string> parameterListForForm = (List<string>)ViewData["parameterListForForm"];
+
+            //Отримання списку властивостей з об'єкту профілю
+            System.Reflection.PropertyInfo[] propList = prof.GetType().GetProperties();
+
+            //Перебір всіх властивостей
+            for (int paramIndex = 0, listIndex = 0; paramIndex < propList.Length; paramIndex++)
+            {
+                //Форматування дати
+                if (propList[paramIndex].Name == "RegistrationDate")
+                {
+                    <li class="list-gro up-item"><b>@parameterListForForm[listIndex]:</b> @(((DateTime)propList[paramIndex].GetValue(prof, null)).ToString("yyyy/MM/dd"))</li>
+                    listIndex++;
+                }
+                //Виведення назви й значення властивості
+                else if (propList[paramIndex].Name != "Hobbies" && propList[paramIndex].Name != "Id")
+                {
+                    <li class="list-gro up-item"><b>@parameterListForForm[listIndex]:</b> @propList[paramIndex].GetValue(prof, null)</li>
+                    listIndex++;
+                }
+            }
+        }
+        <li class="list-gro up-item">
+            <b>Хобі:</b>
+            <ul type="square">
+                @*Окремим підсписком виводиться хобі*@
+                @foreach (DBLib.Models.Hobby item in prof.Hobbies)
+                {
+                    <li class="list-gro up-item">@item.Name</li>
+                }
+            </ul>
+        </li>
+    </ul>
+}

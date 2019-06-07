@@ -1,0 +1,12 @@
+﻿@*Передавання об'єкту помилки*@
+@{
+    @model DBLib.Models.MessageBag
+}
+
+<h1>@ViewBag.Title</h1>
+
+@*//Виводимо текст помилки*@
+<div class="bg-danger text-info alertMessage">@Model.Message</div>
+<br />
+@*Посилання на головну сторінку*@
+<div>Рекомендуємо <a href="/Home/Index">повернутися на голову</a></div>
